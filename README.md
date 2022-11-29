@@ -23,3 +23,7 @@
 默认每周一自动触发两次 Workflow （GitHub Actions 高负载时可能延迟）。如需修改为其他时间或条件下签到，可按照 GitHub [文档](https://docs.github.com/cn/actions/using-workflows/triggering-a-workflow)修改 `.github/workflows/gradle.yml`。
 
 订阅 GitHub Actions 的 [Workflow 运行通知](https://docs.github.com/cn/actions/monitoring-and-troubleshooting-workflows/notifications-for-workflow-runs)，可在签到失败（Workflow 执行失败）时收到通知提醒。
+
+## License
+
+MIT License.
