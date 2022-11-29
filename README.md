@@ -3,22 +3,21 @@
 ## ~~学习不用等~~
 
 ## 使用GitHub Actions实现自动化签到
-近期发现 GitHub Actions 构建节点与易伴云服务器之间存在连接性问题，容易连接超时，导致签到失败。如有条件，建议使用其他 CI/CD 平台，或部署至自有环境。
 
-1. Fork 这个仓库
+### 1. Fork 这个仓库
 
-2. 在仓库的 Settings -> Security -> Secrets -> Actions 中新建两条 repository secret：
+### 2. 在仓库的 Settings -> Security -> Secrets -> Actions 中新建两条 repository secret：
 
    - `USERID`，青年大学习的学习编号
 
    - `USERNAME`，青年大学习的姓名
 
-3. 启用 GitHub Actions
+### 3. 启用 GitHub Actions
 
 进入仓库的 Actions 页面，点击绿色的「I understand my workflows, go ahead and enable them」按钮
 
    - 出于安全考虑，GitHub 会对 Fork 时存在 Workflow 文件的仓库禁用 Actions，需要用户手动确认安全才会启用。
-   
+
    - 如果仓库没有 Actions 页面，请进入仓库的 Settings -> Code and automation -> Actions -> General -> Actions permissions 检查是否允许运行 Actions。
 
 默认每周一自动触发两次 Workflow （GitHub Actions 高负载时可能延迟）。如需修改为其他时间或条件下签到，可按照 GitHub [文档](https://docs.github.com/cn/actions/using-workflows/triggering-a-workflow)修改 `.github/workflows/gradle.yml`。
