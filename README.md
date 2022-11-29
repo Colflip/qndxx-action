@@ -4,15 +4,15 @@
 
 ## 使用GitHub Actions实现自动化签到
 
-### 1. Fork 这个仓库
+1. Fork 这个仓库
 
-### 2. 在仓库的 Settings -> Security -> Secrets -> Actions 中新建两条 repository secret：
+2. 在仓库的 Settings -> Security -> Secrets -> Actions 中新建两条 repository secret：
 
    - `USERID`，青年大学习的学习编号
 
    - `USERNAME`，青年大学习的姓名
 
-### 3. 启用 GitHub Actions
+3. 启用 GitHub Actions
 
 进入仓库的 Actions 页面，点击绿色的「I understand my workflows, go ahead and enable them」按钮
 
